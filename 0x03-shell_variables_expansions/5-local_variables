@@ -1,12 +1,2 @@
 #!/bin/bash
-
-echo "Environment variables:"
-printenv
-echo ""
-
-echo "Local variables:"
-declare -p | grep -v 'declare -x'
-echo ""
-
-echo "Functions:"
-declare -F
+declare -p; declare -F
