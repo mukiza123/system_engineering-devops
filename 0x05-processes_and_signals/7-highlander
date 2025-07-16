@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# Print “To infinity and beyond” forever and respond to SIGTERM with “I am invincible!!!”
-trap 'echo "I am invincible!!!"' SIGTERM
+# Print “To infinity and beyond” forever; shout “I am invincible!!!” on SIGTERM
+trap 'echo "I am invincible!!!"' TERM
 while true; do
   echo "To infinity and beyond"
   sleep 2
 done
-
